@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if [ "$(uname)" = "Linux" ]; then
-    xkblayoutlocalectl status | sed -n 's/.*X11 Layout: \(.*\)/⌨ \1/p'
+    localectl status | sed -n 's/.*X11 Layout: \(.*\)/⌨ \1/p'
 elif [ "$(uname)" = "Darwin" ]; then
     defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep "KeyboardLayout Name" | cut -f 2 -d "=" | tr -d ' ;."'
 fi
