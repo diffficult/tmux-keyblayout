@@ -5,7 +5,7 @@ set -euo pipefail
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Place holder for status left/right
-place_holder="\#{keyboard_layout}"
+place_holder="\#{keyboard_layout2}"
 
 option_scope_config='@keyboard_layout:option_scope'
 length_config='@keyboard_layout:length'
