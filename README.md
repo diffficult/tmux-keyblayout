@@ -1,11 +1,11 @@
-# Tmux Keyboard Layout plugin
+# Tmux Keyboard Layout plugin (forked from imomaliev/tmux-keyboard-layout)
 
-Plugin that shows current keyboard layout.
+Plugin that shows current keyboard layout on Linux or Mac
 
 ### Usage
 
 ```tmux.conf
-set -g status-right '#{keyboard_layout}'
+set -g status-right '#{keyboard_layout2}'
 ```
 
 ### Installation with Tmux Plugin Manager (recommended)
@@ -13,7 +13,7 @@ set -g status-right '#{keyboard_layout}'
 Add plugin to the list of TPM plugins:
 
 ```tmux.conf
-set -g @plugin 'imomaliev/tmux-keyboard-layout'
+set -g @plugin 'diffficult/tmux-keyblayout'
 ```
 
 Press prefix + I to install it.
@@ -23,7 +23,7 @@ Press prefix + I to install it.
 Clone the repo:
 
 ```bash
-$ git clone https://github.com/imomaliev/tmux-keyboard-layout.git ~/clone/path
+$ git clone https://github.com/diffficult/tmux-keyblayout.git ~/clone/path
 ```
 
 Add this line to your .tmux.conf:
